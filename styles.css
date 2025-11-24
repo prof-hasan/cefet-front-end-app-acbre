@@ -32,11 +32,11 @@ header li {
 }
 
 a:link {
-  color: #a66cf1
+  color: #d1b0fc
 }
 
 a:visited {
-  color: #4f396c
+  color: #eadaff
 }
 
 a:hover {
@@ -138,4 +138,28 @@ main {
 
 #tipos-de-nave img {
     border-radius: 6px;
+}
+
+footer {
+    width: auto;
+    height: 90%;
+    background-color: rgba(69, 0, 138, 0.492);
+    padding: 70px;
+    position: relative;
+}
+
+#logo {
+  width: 170px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+#subir {
+  width: 200px;
+  transform-origin: 50% 30%;
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
 }

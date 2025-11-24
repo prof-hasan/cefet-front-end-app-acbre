@@ -1,0 +1,36 @@
+body { 
+  margin: 0; 
+  background-color: black; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-family: Arial, sans-serif;
+}
+canvas { 
+  border: 2px solid white; 
+  background-color: #111; 
+}
+#pontuacao {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+}
+#instrucoes {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 14px;
+}
+
+#fundo-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
