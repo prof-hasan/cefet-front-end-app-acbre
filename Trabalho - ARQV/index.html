@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login">
+        <h1>ARQV</h1>
+        <p>Entre no universo cyberpunk e lute contra os inimigos!</p>
+        <input type="text" id="playerName" placeholder="Digite seu nome">
+        <br>
+        <button onclick="startGame()">Iniciar Jogo</button>
+    </div>
+    
+    <div id="game">
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <p id="score">Pontuação: 0 | Nível: 1</p>
+    </div>
+    
+    <div id="gameOver">
+        <h1>Game Over</h1>
+        <p id="finalScore"></p>
+        <div id="ranking">
+            <h2>Ranking dos Melhores Jogadores</h2>
+            <ol id="rankingList"></ol>
+        </div>
+        <button onclick="restartGame()">Jogar Novamente</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
