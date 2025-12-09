@@ -11,7 +11,7 @@ let score = 0;
 let level = 1;
 let enemySpeed = 2;
 let bulletSpeed = 15;
-let enemyBulletSpeed = 3;
+let enemyBulletSpeed = 1000;
 let lastShot = 0;
 let gameRunning = false;
 let ranking = JSON.parse(localStorage.getItem("ranking")) || [];
@@ -45,7 +45,7 @@ enemyImg.src = "inimigo.png";
 
 function startGame() {
   playerName = document.getElementById("playerName").value || "Jogador Anônimo";
-  loadSounds();  // Carregar sons
+  loadSounds();  
   document.getElementById("login").style.display = "none";
   document.getElementById("game").style.display = "block";
   canvas = document.getElementById("gameCanvas");
@@ -90,10 +90,10 @@ function initLevel() {
       });
     }
   }
-  enemyBulletSpeed *= 1.05;
+  enemyBulletSpeed *= 2.2;
   if (enemyBulletSpeed > 6) enemyBulletSpeed = 6;  
 
-  if (level >= 4) {
+  if (level >= 2 && level <= 4) {
     obstacles.push({
       x: 50,  
       y: 300,  
@@ -108,8 +108,8 @@ function initLevel() {
     });
   }
 
-  if (level >= 3) {
-    enemySpeed += 1;  
+  if (level >= 1) {
+    enemySpeed += 0.1;  
   }
 }
 
@@ -156,8 +156,8 @@ function update() {
     enemy.x += enemy.dx;
     if (enemy.x <= 0 || enemy.x >= canvas.width - enemy.width) enemy.dx *= -1;
 
-    let shotDelay = level >= 5 ? 1500 : (level >= 2 ? 2500 : 2000);
-    if (Date.now() - enemy.lastShot > shotDelay) {
+    let chance = 0.01 + level * 0.001;
+    if (Math.random() < chance) {
       enemyBullets.push({
         x: enemy.x + enemy.width / 2,
         y: enemy.y + enemy.height,
