@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./recomecar.css">
+  <link rel="stylesheet" href="./jogo.css">
+  <title>Twin Stars</title>
+</head>
+<body>
+  <header>
+    <aside class="controls">
+      <button id="btn-back">Voltar</button>
+      <button id="btn-ranking">Ranking</button>
+    </aside>
+  </header>
+  <main>
+    <article class="topo">
+      <aside class="player-area">
+        <span class="player"></span>
+
+        <div class="timer-container">Tempo: <span class="timer">00</span></div>
+      </aside>
+      <nav class="controls">
+        <button id="btn-next-phase">Próxima Fase</button>
+        <button id="btn-restart">Reiniciar Fase</button>
+        <button id="btn-reset-all">Reiniciar Tudo</button>
+      </nav>
+    </article>
+  
+
+    <div id="end-message" class="end-message" style="display:none"></div>
+    <div class="grid"></div>
+
+  </main>
+  <script defer src="./joguinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 17px;
+}
+
+header {    
+    width: auto;
+    height: 60%;
+    background-color: rgba(69, 0, 138, 0.492);
+    padding: 15px;
+    position: relative;
+}
+
+header ul {
+  padding-left: 0;
+  padding-top: 0.20em;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+header li {
+  list-style: none;
+  display: inline-block;
+  border-bottom: 3px;
+  margin: 0 1em;
+}
+
+a:link {
+  color: #d1b0fc
+}
+
+a:visited {
+  color: #eadaff
+}
+
+a:hover {
+  color: rgb(110, 3, 251);
+  text-decoration: none;
+}
+
+a:active {
+  color: #360275;
+  text-decoration: none;
+}
+
+#lista-topo {
+    text-align: center;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'borned';
+    text-shadow: 0 0 6px rgba(87, 83, 91, 0.25), 0 0 12px rgba(65, 45, 86, 0.15);
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'borned';
+}
+
+h3 {
+    font-family: 'borned';
+    font-size: 20px;
+}
+
+.brilho {
+    animation: brilho-pulse 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes brilho-pulse {
+    from {
+        text-shadow: 0 0 4px rgba(87,83,91,0.12), 0 0 10px rgba(65, 45, 86, 0.08);
+        transform: translateZ(0);
+    }
+    to {
+        text-shadow: 0 0 18px rgba(255,255,255,0.95), 0 0 30px rgba(143, 46, 246, 0.6);
+    }
+}
+
+#fundo-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer {
+    width: auto;
+    height: 90%;
+    background-color: rgba(69, 0, 138, 0.492);
+    padding: 70px;
+    position: relative;
+}
+
+#logo {
+  width: 170px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 50%;
+}
+
+#subir {
+  width: 200px;
+  transform-origin: 50% 30%;
+  position: absolute;
+  bottom: 1px;
+  right: 10px;
+}
