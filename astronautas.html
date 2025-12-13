@@ -1,213 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESQV</title>
-    <link rel="stylesheet" href="estilo-astronautas.css">
-    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESQV</title>
+  <link rel="stylesheet" href="astronautas.css">
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
 </head>
+
 <body>
-    <video id="fundo-video" autoplay muted loop playsinline>
-        <source src="./fundo/o jogo.mp4" type="video/mp4">
-    </video>
-    <header id="topo">
-        <h1><span class="brilho">ESQV</span></h1>
-        <h3>Navegadores estrelares</h3>
-        <nav id="lista-topo">
-            <ul>
-                <li><a href="espaconaves.html">Espaçonaves</a></li>
-                <li><a href="astronautas.html">Astronautas</a></li>
-                <li><a href="exploracoes.html">Explorações</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Astronautas</h2>
-            <p>Um astronauta é um profissional altamente treinado para viajar no espaço,
-                comandar ou tripular naves espaciais, realizar pesquisas científicas, experimentos e 
-                manutenção em ambientes fora da atmosfera terrestre, sendo também chamado de cosmonauta 
-                (Rússia) ou taikonauta (China), dependendo da origem. Eles são "navegadores estelares" 
-                que exploram o cosmos para o avanço da ciência e conhecimento humano, enfrentando desafios 
-                como a microgravidade e a hostilidade do ambiente espacial, o que exige anos de treinamento rigoroso.
-            </p>
+  <video id="fundo-video" autoplay muted loop playsinline>
+    <source src="./fundo/o jogo.mp4" type="video/mp4">
+  </video>
+
+  <header id="topo">
+    <h1><span class="brilho">ESQV</span></h1>
+    <h3>Espaçonaves que voam</h3>
+    <nav id="lista-topo">
+      <ul>
+        <li><a href="espaconaves.html">Espaçonaves</a></li>
+        <li><a href="astronautas.html">Astronautas</a></li>
+        <li><a href="exploracoes.html">Explorações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Navegadores estelar</h2>
+    <section class="cards-grid">
+
+      <!-- CARD 1 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg" alt="Imagem frontal do card 1">
+            </div>
+            <div class="face back">
+              <img src="./memoria/img/Neil Armstrong.jpg" alt="Imagem traseira do card 1">
+            </div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Neil Armstrong</h3>
+          <p>Primeiro ser humano a pisar na Lua em 1969, durante a missão Apollo 11. Sua famosa frase marcou um dos maiores momentos da história da exploração espacial.</p>
+        </aside>
+      </article>
+
+      <!-- CARD 2 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Ellen_Ochoa.jpg" alt="Frente card 2"></div>
+            <div class="face back"><img src="./memoria/img/Ellen Ochoa.jpg" alt="Verso card 2"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Ellen Ochoa</h3>
+          <p>Primeira mulher latina no espaço. Participou de quatro missões da NASA e posteriormente tornou-se diretora do Centro Espacial Johnson.</p>
+        </aside>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Bernard_Anthony_Harris_Jr.jpg" alt="Frente card 3"></div>
+            <div class="face back"><img src="./memoria/img/Bernard Harris.jpg" alt="Verso card 3"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Bernard Harris</h3>
+          <p>Primeiro afro-americano a realizar uma caminhada espacial, em 1995. Médico e astronauta, contribuiu para pesquisas médicas no espaço.</p>
+        </aside>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Jeanette_J._Epps.jpg/960px-Jeanette_J._Epps.jpg" alt="Frente card 4"></div>
+            <div class="face back"><img src="./memoria/img/Jeanette Epps.jpg" alt="Verso card 4"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Jeanette Epps</h3>
+          <p>DEngenheira aeroespacial e astronauta da NASA. Participou de missões na Estação Espacial Internacional, contribuindo para pesquisas científicas em órbita.</p>
+        </aside>
+      </article>
+
+        <!-- CARD 5 -->
+               <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Buzz_Aldrin.jpg/960px-Buzz_Aldrin.jpg" alt="Frente card 5"></div>
+            <div class="face back"><img src="./memoria/img/Buzz Aldrin.jpg" alt="Verso card 5"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Buzz Aldrin</h3>
+          <p>Segundo homem a caminhar na Lua na missão Apollo 11. Teve papel essencial nas operações lunares e na divulgação da ciência espacial após a missão.</p>
+        </aside>
+      </article>
+
+        <!-- CARD 6 -->
+               <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Jessica_Watkins_official_portrait.jpg" alt="Frente card 6"></div>
+            <div class="face back"><img src="./memoria/img/Jessica Watkins.jpg" alt="Verso card 6"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Jessica Watkins</h3>
+          <p>Geóloga e astronauta da NASA. Foi a primeira mulher negra a integrar uma missão de longa duração na Estação Espacial Internacional.</p>
+        </aside>
+      </article>
+
+        <!-- CARD 7 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Joan_Higginbotham.jpg/960px-Joan_Higginbotham.jpg" alt="Frente card 7"></div>
+            <div class="face back"><img src="./memoria/img/Joan Higginbotham.jpg" alt="Verso card 7"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Joan Higginbotham</h3>
+          <p>Engenheira e astronauta da NASA, participou de três missões do ônibus espacial. Atuou em pesquisas científicas e desenvolvimento tecnológico.</p>
+        </aside>
+      </article>
+
+        <!-- CARD 8 -->
+               <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Michael_Collins_%28S69-31742%29.jpg/960px-Michael_Collins_%28S69-31742%29.jpg" alt="Frente card 8"></div>
+            <div class="face back"><img src="./memoria/img/Michael Collins.jpg" alt="Verso card 8"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Michael Collins</h3>
+          <p>Piloto do módulo de comando da Apollo 11. Enquanto Armstrong e Aldrin estavam na Lua, Collins permaneceu orbitando, garantindo o sucesso da missão.</p>
+        </aside>
+      </article>
+
+        <!-- CARD 9 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/ShannonLucid.jpeg" alt="Frente card 9"></div>
+            <div class="face back"><img src="./memoria/img/Shannon Lucid.jpg" alt="Verso card 9"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Shannon Lucid</h3>
+          <p>Astronauta da NASA com recorde de permanência no espaço. Passou mais de 180 dias a bordo da estação espacial russa Mir, contribuindo para estudos científicos.</p>
+        </aside>
+      </article>
+
+        <!-- CARD 10 -->
+      <article class="card-container">
+        <figure class="card-3d">
+          <div class="inner">
+            <div class="face front"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ronald_Erwin_McNair.jpg/960px-Ronald_Erwin_McNair.jpg" alt="Frente card 10"></div>
+            <div class="face back"><img src="./memoria/img/Ronald McNair.jpg" alt="Verso card 10"></div>
+          </div>
+        </figure>
+        <aside class="card-texto">
+          <h3>Ronald McNair</h3>
+          <p>Físico e astronauta da NASA, integrou a missão STS-51-L do ônibus espacial Challenger. Destacou-se por sua dedicação à ciência e à educação.</p>
+        </aside>
+      </article>
+    </section>
+    <section id="botao-fundo">
+        <h2>Twin Stars</h2>
+        <p>você conseguiu memorizar o rosto de cada autronauta? Tem certeza e se eles fossem parte de um desenho você ainda saberia quem é quem?
+            Que tal um desafio?
+            Jogue <strong>Twin Stars</strong> e teste sua memoria:
+        </p>
             <article>
-                <h3 class="lista-meio">O que fazem?</h3>
-                <nav>
-                    <ul>
-                        <li><em>Pesquisa Científica:</em> Realizam experimentos em biologia, física, medicina e outras áreas que só podem ser feitos no espaço.</li>
-                        <li><em>Manutenção:</em> Consertam equipamentos e realizam tarefas de manutenção em estações espaciais e naves. </li>
-                        <li><em>Exploração:</em> Contribuem para a descoberta de novas fronteiras e o entendimento do universo. </li>
-                        <li><em>Atividades Extraveiculares (EVAs):</em> Realizam "caminhadas espaciais" para trabalhos externos às naves ou estações. </li>
-                    </ul>
-                </nav>
+                <a href="./memoria/memoria.html">
+                    <img id="Botao-jogo-memoria" src="./memoria/img/Botão-memoria.png" alt="">
+                </a>
             </article>
-            <article>
-                <h3 class="lista-meio">Tipos de astronautas</h3>
-                <nav>
-                    <ul>
-                        <li><em>Governamentais:</em> Treinados por agências como NASA (EUA), ESA (Europa), Roscosmos (Rússia) e CNSA (China).</li>
-                        <li><em>Comerciais:</em> Indivíduos que viajam no espaço em voos suborbitais ou orbitais financiados por empresas privadas, como a Virgin Galactic e Blue Origin.</li>
-                    </ul>
-                </nav>
-            </article>
-        </section>
-        <section>
-            <h3>Astronautas que marcaram a história</h3>
-            <section id="g1">
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Espaçonaves que voam. Todos os direitos reservados.</p>
 
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                    <aside class="card-info">
-                        <h4>Neil Armstrong</h4>
-                        <p>
-                            Neil Alden Armstrong (1930-2012) foi um astronauta, aviador e engenheiro aeroespacial americano. Ele é mais conhecido por ser o primeiro ser humano a pisar na Lua em 20 de julho de 1969, durante a missão Apollo 11 da NASA. Armstrong nasceu em Wapakoneta, Ohio, e desenvolveu um interesse precoce pela aviação, obtendo sua licença de piloto aos 16 anos. Antes de se tornar astronauta, ele serviu como piloto de testes na Marinha dos Estados Unidos e participou de várias missões de voo experimental. Em 1962, Armstrong foi selecionado como astronauta pela NASA e participou da missão Gemini 8 em 1966, onde realizou a primeira acoplagem bem-sucedida de duas naves espaciais em órbita. No entanto, sua maior conquista veio com a Apollo 11, quando ele comandou a missão que levou os primeiros humanos à superfície lunar. Ao pisar na Lua, Armstrong proferiu a famosa frase: "É um pequeno passo para o homem, um salto gigante para a humanidade." Após sua carreira na NASA, Armstrong trabalhou como professor universitário e permaneceu ativo na promoção da exploração espacial até sua morte em 2012.
-                        </p>
-                    </aside>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
+    <img id="logo" src="./img/logo.png" alt="Logo ESQV">
 
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                <!-- Espaço -->
-                <article class="cena" aria-label="Cartão 3D: clique para virar">
-                    <figure class="cartas" id="cartas" role="button" tabindex="0" aria-pressed="false" aria-label="Abrir cartão">
-                        <figure class="cartas_rosto cartas_frente"
-                            style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg');">
-                            <figcaption class="cartas_capitao">Frente — imagem 1</figcaption>
-                        </figure>
-
-                        <figure class="cartas_rosto cartas_verso"
-                            style="background-image: url('./memoria/img/Neil Armstrong.jpg');">
-                            <figcaption class="cartas_capitao">Verso — imagem 2</figcaption>
-                        </figure>
-                    </figure>
-                </article>
-                 
-            </section>
-        </section>
-    </main>
-
-  
-</article>
-<script src="astronautas.js"></script>
+    <a id="voltando" href="#topo">
+      <img id="subir" src="./img/botao-subindo.png" alt="Voltar ao topo">
+    </a>
+  </footer>
 </body>
 </html>
