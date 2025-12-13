@@ -1,25 +1,40 @@
 body {
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 p {
-    font-size: 17px;
+  font-size: 17px;
 }
 
-header {    
-    width: auto;
-    height: 60%;
-    background-color: rgba(69, 0, 138, 0.492);
-    padding: 15px;
-    position: relative;
+a:link { color: #d1b0fc; }
+a:visited { color: #eadaff; }
+a:hover { color: rgb(110, 3, 251); text-decoration: none; }
+a:active { color: #360275; text-decoration: none; }
+
+#fundo-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+header {
+  width: auto;
+  height: 60%;
+  background-color: rgba(69, 0, 138, 0.492);
+  padding: 15px;
+  position: relative;
 }
 
 header ul {
   padding-left: 0;
-  padding-top: 0.20em;
   margin-bottom: 0;
   list-style-type: none;
 }
@@ -27,79 +42,129 @@ header ul {
 header li {
   list-style: none;
   display: inline-block;
-  border-bottom: 3px;
   margin: 0 1em;
 }
 
-a:link {
-  color: #d1b0fc
-}
-
-a:visited {
-  color: #eadaff
-}
-
-a:hover {
-  color: rgb(110, 3, 251);
-  text-decoration: none;
-}
-
-a:active {
-  color: #360275;
-  text-decoration: none;
-}
-
 #lista-topo {
-    text-align: center;
-    font-size: 15px;
+  text-align: center;
+  font-size: 15px;
 }
 
 h1 {
-    font-family: 'borned';
-    text-shadow: 0 0 6px rgba(87, 83, 91, 0.25), 0 0 12px rgba(65, 45, 86, 0.15);
-    font-size: 55px;
+  font-family: 'borned';
+  text-shadow: 0 0 6px rgba(87, 83, 91, 0.25), 0 0 12px rgba(65, 45, 86, 0.15);
+  font-size: 55px;
 }
 
 h2 {
-    font-size: 35px;
-    font-family: 'borned';
+  font-size: 35px;
+  font-family: 'borned';
 }
 
 h3 {
-    font-family: 'borned';
-    font-size: 20px;
+  font-family: 'borned';
+  font-size: 20px;
 }
 
 .brilho {
-    animation: brilho-pulse 1.8s ease-in-out infinite alternate;
+  animation: brilho-pulse 1.8s ease-in-out infinite alternate;
 }
 
 @keyframes brilho-pulse {
-    from {
-        text-shadow: 0 0 4px rgba(87,83,91,0.12), 0 0 10px rgba(65, 45, 86, 0.08);
-        transform: translateZ(0);
-    }
-    to {
-        text-shadow: 0 0 18px rgba(255,255,255,0.95), 0 0 30px rgba(143, 46, 246, 0.6);
-    }
+  from { text-shadow: 0 0 4px rgba(87,83,91,0.12), 0 0 10px rgba(65, 45, 86,0.08); transform: translateZ(0);}
+  to { text-shadow: 0 0 18px rgba(255,255,255,0.95), 0 0 30px rgba(143,46,246,0.6);}
 }
 
-#fundo-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+main {
+  margin: 0 2%;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  min-height: 280px;
+  background: linear-gradient(180deg, rgba(40, 10, 80, 0.95), rgba(15, 5, 30, 0.95));
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(140, 60, 255, 0.35), inset 0 0 40px rgba(255, 255, 255, 0.05);
+}
+
+.card-3d {
+  width: 360px;
+  max-width: 360px;
+  height: 360px;
+  perspective: 1000px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .7s;
+}
+
+.card-3d:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card-texto {
+  max-width: 340px;
+  text-align: left;
+}
+
+.card-texto h3 {
+  margin: 0 0 12px;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.card-texto p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+#Botao-jogo-memoria {
+  width: 160px;
+  max-width: 80%;
 }
 
 footer {
-    width: auto;
-    height: 90%;
-    background-color: rgba(69, 0, 138, 0.492);
-    padding: 70px;
-    position: relative;
+  width: auto;
+  background-color: rgba(69, 0, 138, 0.492);
+  padding: 70px;
+  position: relative;
 }
 
 #logo {
@@ -118,115 +183,36 @@ footer {
   right: 10px;
 }
 
-main {
-    margin: 0 2% 0 2%;
-}
+@media (max-width: 768px) {
+  header h1 { font-size: 38px; }
+  h2 { font-size: 26px; }
+  nav ul li { display: block; margin: 10px 0; }
 
-  .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(360px, 1fr));
-    gap: 24px;
-    justify-content: center;
-  }
-
-  .card-3d {
-    width: 360px;
-    height: 280px;
-    perspective: 1000px;
-    flex-shrink: 0;
-    display: flex;
-  }
-
-.inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform .7s;
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-top:  -4%;
-}
-
-  .card-3d:hover .inner {
-    transform: rotateY(180deg);
-  }
-
-  .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    overflow: hidden;
-  }
-
-  .face img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .back {
-    transform: rotateY(180deg);
+  .card-container {
+    flex-direction: column;
+    text-align: center;
   }
 
   .card-texto {
-    max-width: 250px;
+    text-align: center;
   }
 
-  .card-texto p {
-    margin-top: 50px;
+  .card-texto h3 { font-size: 22px; }
+  .card-texto p { font-size: 15px; }
+
+  footer {
+    padding: 40px 20px;
   }
 
-  .card-texto h2 {
-    margin-top: -70px;
+  #logo, #subir {
+    width: 120px;
+    position: static;
+    margin: 20px auto;
   }
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(450px, 1fr));
-  gap: 30px;
 }
 
-#Botao-jogo-memoria {
-    width: 20%;
-    height: 20%;
-}
-
-.card-container {
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    min-height: 280px;
-
-    background: linear-gradient(
-        180deg,
-        rgba(40, 10, 80, 0.95),
-        rgba(15, 5, 30, 0.95)
-    );
-
-    border-radius: 20px;
-    padding: 30px;
-
-    box-shadow:
-        0 0 25px rgba(140, 60, 255, 0.35),
-        inset 0 0 40px rgba(255, 255, 255, 0.05);
-}
-
-.card-texto {
-  max-width: 340px;
-  text-align: left;
-}
-
-.card-texto h3 {
-  margin: 0 0 12px;
-  font-size: 26px;
-  text-transform: uppercase;
-}
-
-.card-texto p {
-  margin: 0;
-  line-height: 1.6;
-  font-size: 16px;
+@media (min-width: 1400px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
